@@ -1,1 +1,1 @@
-https://github.com/GeoBo/rsschool-cv/cv
+https://geobo.github.io/rsschool-cv/cv
