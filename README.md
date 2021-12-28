@@ -1,1 +1,2 @@
-It's CV by Yuri Bazhelka: https://github.com/GeoBo/rsschool-cv/cv
+https://github.com/GeoBo/rsschool-cv/cv
+https://github.com/GeoBo/rsschool-cv/
