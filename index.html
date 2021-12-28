@@ -1,13 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+    <title>Yuri Bazhelka</title>
+    <link href="image/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="prettify/prettify.css">
+    <script src="app.js"></script>
+    <script src="prettify/prettify.js"></script>
 </head>
+
 <body>
-    <span>!!!Here will be my resume!!!</span>
+    <header>
+        <div class="title">
+            <h1>Yuri Bazhelka</h1>
+            <h2>Front-End Developer</h2>
+            <div>
+                <span class="location">Minsk, Belarus</span>
+                <span class="age">31 years</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="profile">
+            <h3 class="section-header">Profile</h3>
+            <div>
+                <p>I received a radio engineering degree
+                    and have 8 years of experience in electronics development.</p>
+                <p>Having reached my limit in this area, I decided to look for something new,
+                    as creative as my main hobby - music.</p>
+                <p>Now I'm a beginner web developer.</p>
+            </div>
+        </section>
+        <section id="experience">
+            <h3 class="section-header">Experience</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>2013 – 2022</td>
+                        <td>
+                            <h4>STC “BelMicroSystems” JSC “Integral”</h4>
+                            <ul>
+                                <li>Lead Engineer</li>
+                                <li>Development of electronic modules for testing microcircuits</li>
+                                <li>Automation of control of microcircuit parameters</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="education">
+            <h3 class="section-header">Education</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>2021 – 2022</td>
+                        <td>
+                            <h4>Rolling Scopes School</h4>
+                            <ul>
+                                <li>Speciality: JS/FE</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>2008 – 2013</td>
+                        <td>
+                            <h4>Belarusian State University of Informatics and Radioelectronics</h4>
+                            <ul>
+                                <li>Faculty: Radio Engineering and Electronics</li>
+                                <li>Specialty: Radio informatics</li>
+                                <li>Form of education: Full-time</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="projects">
+            <h3 class="section-header">Projects</h3>
+            <p>Online store of radio components: <a href="http://pxel.byethost10.com"
+                    title="Long download due to free hosting">pxel.byethost10.com</a></p>
+            <div class="block-images">
+                <div><a href="image/ham0.jpg" title="Open image"><img src="image/ham_mini0.jpg" alt="project"></a></div>
+                <div><a href="image/ham1.jpg" title="Open image"><img src="image/ham_mini1.jpg" alt="project"></a></div>
+                <div><a href="image/ham2.jpg" title="Open image"><img src="image/ham_mini2.jpg" alt="project"></a></div>
+                <div><a href="image/ham3.jpg" title="Open image"><img src="image/ham_mini3.jpg" alt="project"></a></div>
+            </div>
+        </section>
+        <section id="code">
+            <h3 class="section-header">Code example</h3>
+            <p>Is this number narcissistic?</p>
+            <pre><code class="prettyprint lang-js linenums">//js
+
+function narcissistic(value) {
+    let narcis = String(value)
+                .split("")
+                .reduce((sum, current, index, arr) => 
+                        sum + current**arr.length, 0);
+
+    return narcis == value;
+}</code></pre>
+        </section>
+    </main>
+    <aside>
+        <div class="avatar">
+            <img src="image/avatar.png" alt="avatar">
+        </div>
+        <section class="section-right contacts">
+            <h3>Contacts</h3>
+            <ul class=icon>
+                <li class="email">
+                    <a href="mailto:bozhys@gmail.com">bozhys@gmail.com</a>
+                </li>
+                <li class="linked-in">
+                    <a href="https://linkedin.com/in/yuri-bazhelka">yuri-bazhelka</a>
+                </li>
+                <li class="github">
+                    <a href="https://github.com/GeoBo">@GeoBo</a>
+                </li>
+            </ul>
+        </section>
+        <section class="section-right skills">
+            <h3>Skills</h3>
+            <ul>
+                <li>HTML
+                    <div class="progress-bar html-bar"></div>
+                </li>
+                <li>CSS
+                    <div class="progress-bar css-bar"></div>
+                </li>
+                <li>Javascript
+                    <div class="progress-bar js-bar"></div>
+                </li>
+                <li>React
+                    <div class="progress-bar react-bar"></div>
+                </li>
+                <li>Git
+                    <div class="progress-bar git-bar"></div>
+                </li>
+            </ul>
+        </section>
+        <section class="section-right languages">
+            <h3>Languages</h3>
+            <ul>
+                <li>
+                    <div class="wrapper">
+                        <div>English</div>
+                        <div class='circles'>
+                            <span class="white-circle"></span>
+                            <span class="white-circle"></span>
+                            <span class="white-circle"></span>
+                            <span class="white-circle"></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="level"><span>B1</span></div>
+                </li>
+                <li>
+                    <div class="wrapper">
+                        <div class='item'>German</div>
+                        <div class='circles'>
+                            <span class="white-circle"></span>
+                            <span class="white-circle"></span>
+                            <span class="white-circle"></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="level"><span>A2</span></div>
+                </li>
+            </ul>
+        </section>
+    </aside>
+    <span id="menu-button">≡</span>
+    <nav>
+        <ul>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#code">Code examples</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <div class="github-footer"><a href="https://github.com/GeoBo/" title="Me on GitHub"></a></div>
+        <div class="date-of-creation">2021</div>
+        <div class="rs-school"><a href="https://rs.school/js/"><img src="image/rs_school_js.svg" alt="RS Logo"></a>
+        </div>
+    </footer>
 </body>
+
 </html>
